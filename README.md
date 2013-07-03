@@ -15,6 +15,6 @@ View demo: http://akenn.org/projects/wp-showhide
 <a onclick="wp_showhide.main(this, 'myId1')" href="javascript:void(0)">
   ["Show Text", "Hide Text", "visible"]
 </a>;
-<div id="{myId1}">Content goes here</div>;
+<div id="myId1">Content goes here</div>;
 ```
 
