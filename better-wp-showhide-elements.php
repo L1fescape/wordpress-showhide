@@ -9,7 +9,7 @@ Author URI: http://akenn.org
 */
 
 function wp_showhide_header(){
-	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/better-wp-showhide-elements/better-wp-showhide-elements.js"></script>';
+	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/better-wordpress-showhide-elements/better-wp-showhide-elements.js"></script>';
 }
 
 function wp_showhide_footer(){ ?>
