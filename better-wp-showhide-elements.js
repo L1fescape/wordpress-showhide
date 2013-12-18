@@ -14,12 +14,29 @@ var wp_showhide = {
 		
 		if (wp_showhide.list[index].state == "visible") {
 			wp_showhide.list[index].state = "hidden";
-			theName.style.display = "none";
+			/* mult div addition */
+			var divs = document.getElementsByTagName("div");
+			for (var i = 0;i < divs.length;i++) {
+				if (divs[i].id.match(theName) != null) 
+				{
+      				divs[i].style.display = "none";       				
+   				}
+			}
+			/* END mult div addition */		
+			
 			element.innerHTML = wp_showhide.list[index].values[0];
 		}
 		else {
 			wp_showhide.list[index].state = "visible";
-			theName.style.display = "block";
+			/* mult div addition */
+			var divs = document.getElementsByTagName("div");
+			for (var i = 0;i < divs.length;i++) {
+				if (divs[i].id.match(theName) != null) 
+				{
+      				divs[i].style.display = "block";       				
+   				}
+			}
+			/* END mult div addition */		
 			element.innerHTML = wp_showhide.list[index].values[1];
 		}
 	},
@@ -46,13 +63,27 @@ var wp_showhide = {
 		
 		for (var i = 0; i < wp_showhide.list.length; i++) {
 			if (wp_showhide.list[i].state == "visible") {
-				var div = document.getElementById(wp_showhide.list[i].name);
-				div.style.display = "block";
+				/* mult div addition */
+				var divs = document.getElementsByTagName("div");
+				for (var n = 0;n < divs.length;n++) {
+				if (divs[n].id.match(wp_showhide.list[i].name) != null) 
+				{
+      				divs[n].style.display = "block";       				
+   				}
+				}
+				/* END mult div addition */
 				wp_showhide.list[i].dom.innerHTML = wp_showhide.list[i].values[1];
 			}
 			else {
-				var div = document.getElementById(wp_showhide.list[i].name);
-				div.style.display = "none";
+				/* mult div addition */
+				var divs = document.getElementsByTagName("div");
+				for (var p = 0;p < divs.length;p++) {
+				if (divs[p].id.match(wp_showhide.list[i].name) != null) 
+				{
+      				divs[p].style.display = "none";       				
+   				}
+				}
+				/* END mult div addition */
 				wp_showhide.list[i].dom.innerHTML = wp_showhide.list[i].values[0];
 			}
 		}
