@@ -12,7 +12,7 @@ Adds a Javascript for you to hide or show what ever ID you want with a mouse cli
 
 == Description ==
 
-View demo: http://akenn.org/#/blog/post/44
+View demo: http://akenn.org/projects/wp-showhide/
 
 
 > &lt;a onclick="wp_showhide.main(this, 'myId1')" href="javascript:void(0)"&gt;["Show Text", "Hide Text", "visible"]&lt;/a&gt;
