@@ -3,8 +3,8 @@ Contributors: L1fescape
 Donate link: http://akenn.org
 Tags: showhide, show, hide, elements
 Requires at least: 2.0.2
-Tested up to: 2.1
-Stable tag: 0.3
+Tested up to: 3.8
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
