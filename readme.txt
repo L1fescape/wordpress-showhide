@@ -4,11 +4,11 @@ Donate link: http://akenn.org
 Tags: showhide, show, hide, elements
 Requires at least: 2.0.2
 Tested up to: 3.8
-Stable tag: 0.3.3
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a Javascript for you to hide or show what ever ID you want with a mouse click. You need to add some code to your theme to make it work.
+Adds Javascript for you to hide or show what ever ID you want with a mouse click.
 
 == Description ==
 

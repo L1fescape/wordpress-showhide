@@ -3,7 +3,7 @@
 Plugin Name: Better WP ShowHide Elements
 Plugin URI: http://akenn.org
 Description: Adds a Javascript for you to hide or show what ever ID you want with a mouse click. You need to add some code to your theme to make it work.
-Version: 0.3
+Version: 0.4
 Author: Andrew Kennedy
 Author URI: http://akenn.org
 */
