@@ -1,6 +1,6 @@
 # Description
 
-Adds a Javascript for you to hide or show what ever ID you want with a mouse click. You need to add some code to your theme to make it work.
+Adds some Javascript for you to hide or show what ever ID you want with a mouse click.
 
 # Demo
 View demo: http://akenn.org/projects/wp-showhide
