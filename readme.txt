@@ -8,7 +8,7 @@ Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a Javascript for you to hide or show what ever ID you want with a mouse click. You need to add some code to your theme to make it work.
+Adds some Javascript for you to hide or show what ever ID you want with a mouse click.
 
 == Description ==
 
