@@ -10,36 +10,40 @@ View demo: http://akenn.org/projects/wp-showhide
 2. Upload better-wordpress-showhide-elements folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
-## Usage
+## Examples
 
-Example with image
+Using an image:
 
 ```html
-<img showhide='myId2' src='https://www.google.com/images/srpr/logo11w.png' />
-<div id='myId2'>Content goes here</div>
+<img showhide="myId1" src="https://i1.ytimg.com/vi/-k5rZfw-Co0/mqdefault.jpg" />
+<div id="myId1">
+  <iframe width="420" height="315" src="//www.youtube.com/embed/-k5rZfw-Co0" frameborder="0" allowfullscreen></iframe>
+</div>
 ```
 
-Example with anchor tag
+Using an anchor tag:
 
 ```html
-<a showhide='myId1' href="#">
-  ["When visible", "When hidden"]
+<a showhide="myId2" href="#">
+  ["Hide Video", "Show Video"]
 </a>
-<div id="myId1">Content goes here</div>
+<div id="myId2">
+  <iframe width="560" height="315" src="//www.youtube.com/embed/r7gmVWgEpRc" frameborder="0" allowfullscreen></iframe>
+</div>
 ```
 
-Example with image with content initially visible
+Using an image with content initially visible:
 
 ```html
-<img showhide='myId3' showhide_visible='true' src='https://www.google.com/images/srpr/logo11w.png' />
-<div id='myId3'>Content goes here</div>
+<img showhide="myId3" showhide_visible="true" src="https://www.google.com/images/srpr/logo11w.png" />
+<div id="myId3">Content goes here</div>
 ```
 
-Example with div and content initially visible
+Using a div and content initially visible:
 
 ```html
-<a showhide='myId4' showhide_visible='true' href="#">
-  ["When visible", "When hidden"]
-</a>
+<div showhide="myId4" showhide_visible="true" href="#">
+  ["Hide Content", "Show Content"]
+</div>
 <div id="myId4">Content goes here</div>
 ```
