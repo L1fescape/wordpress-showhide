@@ -44,7 +44,7 @@ var wp_showhide = {
 		var links = document.getElementsByTagName('a');
 		
 		for (var i = 0; i < links.length; i++) {
-      if (links[i].hasAttribute("onclick") && links[i].getAttribute("onclick") != null && links[i].getAttribute("onclick").indexOf("wp_showhide") > -1) {
+			if (links[i].hasAttribute("onclick") && links[i].getAttribute("onclick") != null && links[i].getAttribute("onclick").indexOf("wp_showhide") > -1) {
 				var onclick = links[i].getAttribute("onclick");
 				onclick = onclick.split("wp_showhide.main(this, '");
 				onclick[0] = onclick[1].split("')");
