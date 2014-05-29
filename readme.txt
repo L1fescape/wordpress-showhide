@@ -31,5 +31,5 @@ The function inside the link's onclick method includes the name of the div you w
 == Installation ==
 
 1. Unzip better-wp-showhide-elements.zip
-2. Upload better-wp-showhide-elements folder to the `/wp-content/plugins/` directory
+2. Upload better-wordpress-showhide-elements folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
