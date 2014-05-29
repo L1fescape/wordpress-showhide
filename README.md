@@ -1,6 +1,6 @@
-# Description
+# WordPress ShowHide
 
-Adds some Javascript for you to hide or show what ever ID you want with a mouse click.
+> Show or hide what ever element you want with a mouse click.
 
 # Demo
 View demo: http://akenn.org/projects/wp-showhide
@@ -12,9 +12,9 @@ View demo: http://akenn.org/projects/wp-showhide
 
 # Usage
 ```
-<a onclick="wp_showhide.main(this, 'myId1')" href="javascript:void(0)">
-  ["Show Text", "Hide Text", "visible"]
-</a>;
-<div id="myId1">Content goes here</div>;
+<a showhide='myId1' href="#">
+  ["When visible", "When hidden"]
+</a>
+<div id="myId1">Content goes here</div>
 ```
 
