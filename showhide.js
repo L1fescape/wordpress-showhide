@@ -1,12 +1,19 @@
 (function($){ 
   $(document).ready(function() {
-    var elems = $('*[showhide]'),
+    var elems = $('*[showhide], *[onclick*=wp_showhide]'),
       $elem, id, text, settings, visible;
 
     for (var i = 0; i < elems.length; i++) {
       $elem = elems.eq(i);
-      id = "#" + $elem.attr("showhide");
-      visible = !!$elem.attr("showhide_visible");
+      if ($elem.attr('showhide')) {
+        id = "#" + $elem.attr("showhide");
+        visible = !!$elem.attr("showhide_visible");
+      } else {
+        // legacy parse attrs
+        id = "#" + $elem.attr('onclick').replace(/wp_showhide\.main|this|,| |\'|\(|\)|\"/g, "");
+        $elem.attr('onclick', '');
+      }
+
       text = $elem.text();
 
       // check if the element has text inside it and attempt to parse it
@@ -15,6 +22,10 @@
           settings = JSON.parse($elem.text());
           $elem.data("wpsh_show", settings[0]);
           $elem.data("wpsh_hide", settings[1]);
+          // legacy visibility
+          if (settings.length > 2) {
+            visible = (settings[2].toLowerCase() == 'visible') ? true : false;
+          }
         }catch(e){
           console.error("Error parsing text inside showhide element", $elem);
           console.error(e);
