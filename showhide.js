@@ -20,8 +20,8 @@
       if (text){
         try {
           settings = JSON.parse($elem.text());
-          $elem.data("wpsh_show", settings[0]);
-          $elem.data("wpsh_hide", settings[1]);
+          $elem.data("wpsh_hide", settings[0]);
+          $elem.data("wpsh_show", settings[1]);
           // legacy visibility
           if (settings.length > 2) {
             visible = (settings[2].toLowerCase() == 'visible') ? true : false;
