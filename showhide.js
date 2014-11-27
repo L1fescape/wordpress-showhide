@@ -19,7 +19,8 @@
       // check if the element has text inside it and attempt to parse it
       if (text){
         try {
-          settings = JSON.parse($elem.text());
+          text = text.replace(/’|‘|”|“/g, '"'); // Wordpress 4.0.1 changed the way quotes are output in posts
+          settings = JSON.parse(text);
           $elem.data("wpsh_hide", settings[0]);
           $elem.data("wpsh_show", settings[1]);
           // legacy visibility
