@@ -3,7 +3,7 @@
     var elems = $('*[showhide], *[onclick*=wp_showhide]'),
       $elem, id, text, settings, visible;
 
-    for (var i = 0; i < elems.length; i++) {
+    for (var j = 0; j < elems.length; i++) {
       $elem = elems.eq(i);
       if ($elem.attr('showhide')) {
         id = "#" + $elem.attr("showhide");
